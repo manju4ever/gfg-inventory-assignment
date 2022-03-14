@@ -1,0 +1,44 @@
+{
+  "name": "inventory-service",
+  "version": "1.0.0",
+  "description": "A simple invetory service supporting basic functions",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "npx nodemon --exec babel-node src/index.js",
+    "build": "npx babel src/ --out-dir dist/",
+    "deploy": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manju4ever/inventory-service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manju4ever/inventory-service/issues"
+  },
+  "homepage": "https://github.com/manju4ever/inventory-service#readme",
+  "dependencies": {
+    "@hapi/cookie": "^11.0.2",
+    "@hapi/hapi": "^20.2.1",
+    "@hapi/inert": "^6.0.5",
+    "@hapi/vision": "^6.1.0",
+    "bunyan": "^1.8.15",
+    "config": "^3.3.7",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^8.1.0",
+    "hapi-auth-jwt2": "^10.2.0",
+    "joi": "^17.6.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.7",
+    "@babel/node": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/runtime": "^7.6.3",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "nodemon": "^2.0.15"
+  }
+}

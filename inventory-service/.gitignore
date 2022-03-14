@@ -1,0 +1,12 @@
+build
+dist
+.history
+.vscode
+node_modules
+yarn.lock
+npm-debug.log
+functions
+.firebase*
+firebase*
+db/
+
